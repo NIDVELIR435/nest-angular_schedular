@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "scheduler": "apps/scheduler",
+    "scheduler-e2e": "apps/scheduler-e2e"
+  }
+}
