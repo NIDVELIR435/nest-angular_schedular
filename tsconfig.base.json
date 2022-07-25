@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nest-angular/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@nest-angular/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@nest-angular/frontend/*": ["apps/tasker/*"],
+      "@nest-angular/backend/*": ["apps/api/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
