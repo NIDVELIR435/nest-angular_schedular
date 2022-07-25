@@ -1,6 +1,19 @@
-<div style="text-align: center">
-  <h1>Welcome to scheduler!</h1>
-  <a routerLink="/sign-in" routerLinkActive="active">sign-in</a>
 
-  <router-outlet></router-outlet>
-</div>
+<mat-toolbar color="primary">
+
+  <span>Scheduler</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button color="accent" routerLink="/sign-in" routerLinkActive="active">
+    <mat-icon>login</mat-icon>
+  </button>
+<!--  <button mat-icon-button color="accent" routerLink="/sign-in" routerLinkActive="active">-->
+<!--    <mat-icon>logout</mat-icon>-->
+<!--  </button>-->
+</mat-toolbar>
+<mat-grid-list cols="1" rowHeight="2:1">
+
+    <mat-grid-tile>
+      <router-outlet></router-outlet>
+
+    </mat-grid-tile>
+  </mat-grid-list>

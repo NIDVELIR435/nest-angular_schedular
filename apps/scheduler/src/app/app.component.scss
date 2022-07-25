@@ -1,0 +1,12 @@
+mat-grid-tile {
+  background: #303030;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+mat-toolbar {
+  position: sticky;
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+
+}
