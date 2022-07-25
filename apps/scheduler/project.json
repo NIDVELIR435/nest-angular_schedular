@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/scheduler",
         "index": "apps/scheduler/src/index.html",
@@ -18,7 +20,10 @@
           "apps/scheduler/src/favicon.ico",
           "apps/scheduler/src/assets"
         ],
-        "styles": ["apps/scheduler/src/styles.scss"],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+          "apps/scheduler/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -86,7 +91,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/scheduler"],
+      "outputs": [
+        "coverage/apps/scheduler"
+      ],
       "options": {
         "jestConfig": "apps/scheduler/jest.config.js",
         "passWithNoTests": true

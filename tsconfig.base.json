@@ -7,17 +7,18 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noImplicitAny": false,
     "importHelpers": true,
     "target": "es2015",
-    "module": "esnext",
+    "module": "ESNext",
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
       "@nest-angular/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@nest-angular/frontend/*": ["apps/tasker/*"],
-      "@nest-angular/backend/*": ["apps/api/*"]
+      "@nest-angular/backend/*": ["apps/api/*"],
+      "@nest-angular/frontend/*": ["apps/scheduler/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

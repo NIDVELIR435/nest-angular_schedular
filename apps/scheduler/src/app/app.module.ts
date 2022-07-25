@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AppComponent } from '@nest-angular/frontend/src/app/app.component';
+import { SignInComponent } from '@nest-angular/frontend/src/app/sign-in/sign-in.component';
+import { AppRoutingModule } from '@nest-angular/frontend/src/app/app-routing/app-routing.module';
+import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule, HttpClientModule],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule, RouterModule, BrowserAnimationsModule],
+  declarations: [AppComponent, SignInComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
