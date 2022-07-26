@@ -1,0 +1,29 @@
+<mat-card>
+  <mat-card-title>Sign up</mat-card-title>
+  <mat-card-subtitle>fill correct data below</mat-card-subtitle>
+  <mat-card-content>
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="outline">
+        <mat-label>Enter your first name</mat-label>
+        <input matInput name="password"  formControlName="firstName" />
+      </mat-form-field><br/>
+      <mat-form-field appearance="outline">
+        <mat-label>Enter your last name</mat-label>
+        <input matInput name="password"  formControlName="lastName" />
+      </mat-form-field><br/>
+      <mat-form-field appearance="outline">
+        <mat-label>Enter your email</mat-label>
+        <input matInput name="password"  formControlName="email" />
+      </mat-form-field><br/>
+      <mat-form-field appearance="outline">
+        <mat-label>Enter your password</mat-label>
+        <input matInput name="password"  formControlName="password" />
+      </mat-form-field><br/>
+      <button mat-raised-button type="submit">submit</button>
+    </form>
+    <mat-card-actions align="end">
+      <a mat-flat-button routerLink="/sign-in">sign in</a>
+    </mat-card-actions>
+  </mat-card-content>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</mat-card>

@@ -17,6 +17,8 @@
     "baseUrl": ".",
     "paths": {
       "@nest-angular/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@nest-angular/type-utils": ["libs/api-interfaces/src/lib/utils/index.ts"],
+      "@nest-angular/enums": ["libs/api-interfaces/src/lib/enums/index.ts"],
       "@nest-angular/backend/*": ["apps/api/*"],
       "@nest-angular/frontend/*": ["apps/scheduler/*"]
     }

@@ -1,19 +1,17 @@
-
 <mat-toolbar color="primary">
-
   <span>Scheduler</span>
   <span class="example-spacer"></span>
-  <button mat-icon-button color="accent" routerLink="/sign-in" routerLinkActive="active">
+  <button
+    mat-icon-button
+    color="accent"
+    routerLink="/sign-in"
+    routerLinkActive="active"
+  >
     <mat-icon>login</mat-icon>
   </button>
-<!--  <button mat-icon-button color="accent" routerLink="/sign-in" routerLinkActive="active">-->
-<!--    <mat-icon>logout</mat-icon>-->
-<!--  </button>-->
 </mat-toolbar>
-<mat-grid-list cols="1" rowHeight="2:1">
-
-    <mat-grid-tile>
-      <router-outlet></router-outlet>
-
-    </mat-grid-tile>
-  </mat-grid-list>
+<mat-grid-list cols="1" rowHeight="1:1" role="listitem">
+  <mat-grid-tile>
+    <router-outlet></router-outlet>
+  </mat-grid-tile>
+</mat-grid-list>

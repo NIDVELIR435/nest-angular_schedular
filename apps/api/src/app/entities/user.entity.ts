@@ -1,7 +1,7 @@
 import { Column, Entity } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
-import {DecorateAll} from "@nest-angular/backend/src/app/common/decorators";
-import {IntTimestampEntity} from "@nest-angular/backend/src/app/entities/utils/int-timestamp.entity";
+import { DecorateAll } from '@nest-angular/backend/src/app/common/decorators';
+import { IntTimestampEntity } from '@nest-angular/backend/src/app/entities/utils/int-timestamp.entity';
 
 @Entity('user')
 @DecorateAll([ApiProperty()])
@@ -16,19 +16,27 @@ export class User extends IntTimestampEntity {
 
   @ApiProperty()
   @Column({
-    name: 'name',
+    name: 'first_name',
     type: 'varchar',
     length: 500,
   })
-  name: string;
+  firstName: string;
 
   @ApiProperty()
   @Column({
-    name: 'mail',
+    name: 'last_name',
     type: 'varchar',
     length: 500,
   })
-  mail: string;
+  lastName: string;
+
+  @ApiProperty()
+  @Column({
+    name: 'email',
+    type: 'varchar',
+    length: 500,
+  })
+  email: string;
 
   @ApiProperty()
   @Column({

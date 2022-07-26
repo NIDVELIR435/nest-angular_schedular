@@ -1,38 +1,19 @@
-one
-<mat-grid-tile style="background-color: white">
-  <mat-card>
-    <mat-card-content>
-      <h1 class="title">Sign in</h1>
-      <form>
-        <mat-form-field appearance="fill">
+<mat-card>
+  <mat-card-title>Sign in</mat-card-title>
+  <mat-card-subtitle>fill correct data below</mat-card-subtitle>
+  <mat-card-content>
+    <form>
+      <mat-form-field appearance="fill"> </mat-form-field><br />
 
-          </mat-form-field
-        ><br />
-
-        <mat-form-field appearance="fill">
-          <mat-label>Enter your password</mat-label>
-          <input
-            matInput
-            name="password"
-          />
-          <button
-            mat-icon-button
-            matSuffix
-          >
-          </button> </mat-form-field
-        ><br />
-
-        <button
-        >
-          submit
-        </button>
-      </form>
-      <mat-card-actions align="end">
-        <a mat-flat-button routerLink="/sign-up">sign up</a>
-      </mat-card-actions>
-    </mat-card-content>
-    <mat-card-footer *ngIf="true">
-      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-    </mat-card-footer>
-  </mat-card>
-</mat-grid-tile>
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your password</mat-label>
+        <input matInput name="password" />
+        <button mat-icon-button matSuffix></button> </mat-form-field
+      ><br />
+    </form>
+    <mat-card-actions align="end">
+      <a mat-flat-button routerLink="/sign-up">sign up</a>
+    </mat-card-actions>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </mat-card-content>
+</mat-card>

@@ -10,6 +10,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { SignInModule } from '@nest-angular/frontend/src/app/sign-in/sign-in.module';
+import { SignUpModule } from '@nest-angular/frontend/src/app/sign-up/sign-up.module';
 
 @NgModule({
   imports: [
@@ -19,11 +20,11 @@ import { SignInModule } from '@nest-angular/frontend/src/app/sign-in/sign-in.mod
     RouterModule,
     BrowserAnimationsModule,
     MatGridListModule,
-    MatGridListModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
     SignInModule,
+    SignUpModule,
   ],
   declarations: [AppComponent],
   providers: [],

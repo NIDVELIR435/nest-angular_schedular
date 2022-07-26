@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { SignInComponent } from '@nest-angular/frontend/src/app/sign-in/sign-in.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -8,9 +7,11 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { AppRoutingModule } from '@nest-angular/frontend/src/app/app-routing/app-routing.module';
+import { SignUpComponent } from '@nest-angular/frontend/src/app/sign-up/sign-up.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [SignInComponent],
+  declarations: [SignUpComponent],
   imports: [
     MatCardModule,
     MatProgressBarModule,
@@ -20,6 +21,7 @@ import { AppRoutingModule } from '@nest-angular/frontend/src/app/app-routing/app
     MatButtonModule,
     MatIconModule,
     AppRoutingModule,
+    ReactiveFormsModule,
   ],
 })
-export class SignInModule {}
+export class SignUpModule {}
